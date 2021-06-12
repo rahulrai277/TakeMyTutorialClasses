@@ -35,8 +35,10 @@
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
-                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm">C Language</a></li>
-                            <li><a class="dropdown-item" href="https://www.python.org/doc/">Python </a></li>
+                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm"
+                                    target="_blank">C Language</a></li>
+                            <li><a class="dropdown-item" href="https://www.python.org/doc/" target="_blank">Python </a>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
@@ -50,9 +52,13 @@
                                     target="_blank">CSS</a></li>
                             <li><a class="dropdown-item" href="https://www.w3schools.com/php/DEFAULT.asp"
                                     target="_blank">PHP</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
-                            <li><a class="dropdown-item" href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">ASPnet</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp" target="_blank">jQuery</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/"
+                                    target="_blank">JavaScript</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro"
+                                    target="_blank">ASPnet</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp"
+                                    target="_blank">jQuery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -107,7 +113,7 @@
                                     href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                                     target="_blank">Email
                                     me </a></li>
-                            <li><a class="dropdown-item" href="contact.html">Mobile No </a></li>
+                            <li><a class="dropdown-item" href="../contact.html">Mobile No </a></li>
                             <li><a class="dropdown-item" href="write.html">Write For us </a></li>
                         </ul>
                     </li>
@@ -119,15 +125,106 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success me-2" type="submit">Search</button>
                 </div>
+                <!---                login and signup---->
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-danger">Sign-up</button>
+                    <button type="button" class="btn btn-outline-light me-2 " data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign-up</button>
                 </div>
 
             </div>
 
         </div>
     </nav>
+
+    <!--------  ----------------------------------->
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login to TMT Classes </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!-- Signup Modal -->
+     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup for TMT Classes </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputname" class="form-label">Name</label>
+                            <input type="" class="form-control" id="exampleInputname"
+                                aria-describedby="namehelp">
+                            <div id="namehelp" class="form-text">We'll never share your name with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputconfirmPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputconfirmPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------->
+    <!---------------------------------------------------------------------->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -163,9 +260,11 @@
                     <p>
                     <h6> For C language, Python, and Web Development Tools</h6>
                     </p>
-                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button class="btn btn-outline-primary">C
+                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button
+                            class="btn btn-outline-primary">C
                             Language</button></a>
-                    <a href="https://www.python.org/doc/" target="_blank"> <button class="btn btn-outline-secondary">Python</button></a>
+                    <a href="https://www.python.org/doc/" target="_blank"> <button
+                            class="btn btn-outline-secondary">Python</button></a>
                     <a href="https://getbootstrap.com/" target="_blank"> <button
                             class="btn btn-outline-danger">Bootstrap</button></a>
                     <a href="https://angular.io/docs" target="_blank"> <button type="button"
@@ -181,8 +280,8 @@
                     <a href="https://www.javascript.com/learn/strings" target="_blank"> <button type="button"
                             class="btn btn-outline-success">
                             JavaScript</button></a>
-                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank"> <button type="button"
-                            class="btn btn-outline-info">ASPnet</button></a>
+                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">
+                        <button type="button" class="btn btn-outline-info">ASPnet</button></a>
                     <a href="https://api.jquery.com/" target="_blank"> <button type="button"
                             class="btn btn-outline-dark">jQuery</button></a>
 
@@ -223,9 +322,9 @@
                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                         target="_blank">
                         <button class="btn btn-outline-warning">Email us</button></a>
-                    <a href="write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
+                    <a href="../write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
                             us</button></a>
-                    <a href="contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
+                    <a href="../contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
                             No</button></a>
                 </div>
             </div>
@@ -245,59 +344,88 @@
     <div class="container my-5">
         <article id="post-940399" class="post-940399 page type-page status-publish hentry">
             <h2>Best Books For JEE Advanced Preparation</h2>
-            <p>Do you dream of becoming a successful engineer? Do you aspire to have a dazzling career in the field of engineering? If yes, then in order to fulfil your dreams the best way is to take the Joint Entrance Examination (JEE). It is through JEE that students can be a part of some of the best institutions in India. Besides, these institutions offer top courses in engineering. However, IIT JEE is one of the toughest entrance exams conducted all over India and the competition is also intense. If we analyze the data, every year, lakhs of students appear for the exam.</p>
-            <p>Are you a JEE aspirant, ready to crack JEE? Well, there are certain things that students or candidates need to do in order to succeed. It basically requires developing a positive mindset, along with smart work and a good amount of dedication while remaining motivated. Apart from this, it is also important for students to make use of the right study materials. As such, a number of JEE books have been introduced into the market but it is important to choose the right one.&nbsp; Choosing the right book for the preparation might be like choosing a pearl from the ocean but referring the right books has a lot of advantages.&nbsp;Good books will help students develop a complete understanding of topics rather than having a superficial knowledge.</p>
-            <p>Therefore to help students find the right study tools, this article covers a list of books that will guide them in their preparation to crack <a href="https://byjus.com/jee-2019/">JEE</a> successfully. Get subject-wise books below.</p>
+            <p>Do you dream of becoming a successful engineer? Do you aspire to have a dazzling career in the field of
+                engineering? If yes, then in order to fulfil your dreams the best way is to take the Joint Entrance
+                Examination (JEE). It is through JEE that students can be a part of some of the best institutions in
+                India. Besides, these institutions offer top courses in engineering. However, IIT JEE is one of the
+                toughest entrance exams conducted all over India and the competition is also intense. If we analyze the
+                data, every year, lakhs of students appear for the exam.</p>
+            <p>Are you a JEE aspirant, ready to crack JEE? Well, there are certain things that students or candidates
+                need to do in order to succeed. It basically requires developing a positive mindset, along with smart
+                work and a good amount of dedication while remaining motivated. Apart from this, it is also important
+                for students to make use of the right study materials. As such, a number of JEE books have been
+                introduced into the market but it is important to choose the right one.&nbsp; Choosing the right book
+                for the preparation might be like choosing a pearl from the ocean but referring the right books has a
+                lot of advantages.&nbsp;Good books will help students develop a complete understanding of topics rather
+                than having a superficial knowledge.</p>
+            <p>Therefore to help students find the right study tools, this article covers a list of books that will
+                guide them in their preparation to crack <a href="https://byjus.com/jee-2019/">JEE</a> successfully. Get
+                subject-wise books below.</p>
             <h2>Best Books For JEE Advanced</h2>
             <p class="text-danger"><strong>PHYSICS:</strong></p>
             <ul>
-            <li>NCERT Textbooks</li>
-            <li>Concepts of Physics Vol I and II by H.C. Verma (Highly Recommended)</li>
-            <li>Fundamentals of Physics by Halliday, Resnick &amp; Walker</li>
-            <li>Problems in General Physics by I.E. Irodov</li>
-            <li>IIT Physics by D.C. Pandey</li>
-            <li>Problems in Physics by S.S. Krotov</li>
+                <li>NCERT Textbooks</li>
+                <li>Concepts of Physics Vol I and II by H.C. Verma (Highly Recommended)</li>
+                <li>Fundamentals of Physics by Halliday, Resnick &amp; Walker</li>
+                <li>Problems in General Physics by I.E. Irodov</li>
+                <li>IIT Physics by D.C. Pandey</li>
+                <li>Problems in Physics by S.S. Krotov</li>
             </ul>
             <p class="text-warning"><strong>CHEMISTRY: </strong></p>
             <ul>
-            <li>NCERT Textbooks</li>
-            <li>Organic Chemistry – O. P. Tandon</li>
-            <li>Organic Chemistry – Peter Sykes</li>
-            <li>Organic Chemistry – M. S. Chauhan</li>
-            <li>Organic Chemistry – Morrison and Boyd (This book covers a lot of topics with extensive detail. Make sure you highlight what is important before you proceed if you have a time constraint)</li>
-            <li>Physical Chemistry – O. P. Tandon</li>
-            <li>Concise Inorganic Chemistry – J. D. Lee</li>
-            <li>Modern Approach to Chemical Calculations – R. C. Mukherjee (for practice)</li>
+                <li>NCERT Textbooks</li>
+                <li>Organic Chemistry – O. P. Tandon</li>
+                <li>Organic Chemistry – Peter Sykes</li>
+                <li>Organic Chemistry – M. S. Chauhan</li>
+                <li>Organic Chemistry – Morrison and Boyd (This book covers a lot of topics with extensive detail. Make
+                    sure you highlight what is important before you proceed if you have a time constraint)</li>
+                <li>Physical Chemistry – O. P. Tandon</li>
+                <li>Concise Inorganic Chemistry – J. D. Lee</li>
+                <li>Modern Approach to Chemical Calculations – R. C. Mukherjee (for practice)</li>
             </ul>
             <p class="text-success"><strong>MATHEMATICS:</strong></p>
             <ul>
-            <li>Maths XI &amp; XII by R.D. Sharma</li>
-            <li>Objective Mathematics for JEE Main &amp; Advanced and Other Engineering Entrance Examinations by R.D. Sharma</li>
-            <li>Trigonometry &amp; Geometry: – Plane Trigonometry Part 1 by S.L. Loney</li>
-            <li>Co-ordinate Geometry: – Plane Co-ordinate Geometry by S.L. Loney</li>
-            <li>Algebra: – Higher Algebra by Hall and Knight</li>
-            <li>Calculus: – Problems in Calculus of One Variable by I.A. Maron</li>
-            <li>Differential Calculus by A. Das Gupta.</li>
-            <li>Course in Mathematics for IIT-JEE by Tata McGraw-Hill publications. [practice]</li>
+                <li>Maths XI &amp; XII by R.D. Sharma</li>
+                <li>Objective Mathematics for JEE Main &amp; Advanced and Other Engineering Entrance Examinations by
+                    R.D. Sharma</li>
+                <li>Trigonometry &amp; Geometry: – Plane Trigonometry Part 1 by S.L. Loney</li>
+                <li>Co-ordinate Geometry: – Plane Co-ordinate Geometry by S.L. Loney</li>
+                <li>Algebra: – Higher Algebra by Hall and Knight</li>
+                <li>Calculus: – Problems in Calculus of One Variable by I.A. Maron</li>
+                <li>Differential Calculus by A. Das Gupta.</li>
+                <li>Course in Mathematics for IIT-JEE by Tata McGraw-Hill publications. [practice]</li>
             </ul>
             <h3>Difference Between JEE Main And JEE Advanced Syllabus</h3>
-            <p>Apart from the books candidates should also know some important things about the JEE syllabus especially for <a href="../jee.html">JEE Main</a> and JEE Advanced. There is a slight difference between the two syllabuses. JEE Advanced contains some extra topics in comparison to JEE Main. JEE Main mainly deals with topics up to the NCERT level. Meanwhile, JEE Advanced syllabus covers deep inside the topics. This makes the preparation of JEE Advanced more cumbersome. But this can be easier when done in an organized way.</p>
+            <p>Apart from the books candidates should also know some important things about the JEE syllabus especially
+                for <a href="../jee.html">JEE Main</a> and JEE Advanced. There is a slight difference between the two
+                syllabuses. JEE Advanced contains some extra topics in comparison to JEE Main. JEE Main mainly deals
+                with topics up to the NCERT level. Meanwhile, JEE Advanced syllabus covers deep inside the topics. This
+                makes the preparation of JEE Advanced more cumbersome. But this can be easier when done in an organized
+                way.</p>
             <h3>Some Useful Tips For JEE Exam</h3>
-            <p>For better preparation, the following tips along with a thorough understanding of the books given above will help you tackle JEE Advanced quite easily;</p>
+            <p>For better preparation, the following tips along with a thorough understanding of the books given above
+                will help you tackle JEE Advanced quite easily;</p>
             <ul>
-            <li>Make proper notes while studying these books as it will prevent you from again reading the topics which are not that important.</li>
-            <li>After finishing every topic make it a point to solve MCQ’s on it as it will give you an idea of your understanding of the topic.</li>
-            <li>Take a lot of mock tests and solve a lot of sample papers and previous year’s papers. This will help you boost your self-confidence and prepare yourself for the upcoming examination.</li>
+                <li>Make proper notes while studying these books as it will prevent you from again reading the topics
+                    which are not that important.</li>
+                <li>After finishing every topic make it a point to solve MCQ’s on it as it will give you an idea of your
+                    understanding of the topic.</li>
+                <li>Take a lot of mock tests and solve a lot of sample papers and previous year’s papers. This will help
+                    you boost your self-confidence and prepare yourself for the upcoming examination.</li>
             </ul>
-            <p>Remember that success is the sum of small efforts, repeated day in and day out. So, if want to crack <a href="../jee.html">JEE Advanced</a> make sure to fulfil each day’s worth by completing the small targets you set for yourself every day. Follow the above-mentioned books for JEE Advanced preparation. Once you go through the concepts and practice questions from these books you will have a grip on the topics. You will start scoring high as well.</p>
-            
-            
+            <p>Remember that success is the sum of small efforts, repeated day in and day out. So, if want to crack <a
+                    href="../jee.html">JEE Advanced</a> make sure to fulfil each day’s worth by completing the small
+                targets you set for yourself every day. Follow the above-mentioned books for JEE Advanced preparation.
+                Once you go through the concepts and practice questions from these books you will have a grip on the
+                topics. You will start scoring high as well.</p>
+
+
             <div class="clearfix"></div>
-            </article>
+        </article>
 
     </div>
 
-    
+
 
 
 
@@ -388,8 +516,8 @@
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
                 </svg>
             </a>
-             <!-- hitwebcounter Code START -->
-             <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
                 <img src="https://hitwebcounter.com/counter/counter.php?page=7825086&style=0038&nbdigits=7&type=page&initCount=1000"
                     title="Free Counter" Alt="web counter" /></a>
         </div>

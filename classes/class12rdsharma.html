@@ -35,8 +35,10 @@
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
-                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm">C Language</a></li>
-                            <li><a class="dropdown-item" href="https://www.python.org/doc/">Python </a></li>
+                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm"
+                                    target="_blank">C Language</a></li>
+                            <li><a class="dropdown-item" href="https://www.python.org/doc/" target="_blank">Python </a>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
@@ -50,9 +52,13 @@
                                     target="_blank">CSS</a></li>
                             <li><a class="dropdown-item" href="https://www.w3schools.com/php/DEFAULT.asp"
                                     target="_blank">PHP</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
-                            <li><a class="dropdown-item" href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">ASPnet</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp" target="_blank">jQuery</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/"
+                                    target="_blank">JavaScript</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro"
+                                    target="_blank">ASPnet</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp"
+                                    target="_blank">jQuery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -107,8 +113,8 @@
                                     href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                                     target="_blank">Email
                                     me </a></li>
-                            <li><a class="dropdown-item" href="contact.html">Mobile No </a></li>
-                            <li><a class="dropdown-item" href="write.html">Write For us </a></li>
+                            <li><a class="dropdown-item" href="../contact.html">Mobile No </a></li>
+                            <li><a class="dropdown-item" href="../write.html">Write For us </a></li>
                         </ul>
                     </li>
                     <!--  <li class="nav-item">
@@ -119,15 +125,106 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success me-2" type="submit">Search</button>
                 </div>
+                <!---                login and signup---->
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-danger">Sign-up</button>
+                    <button type="button" class="btn btn-outline-light me-2 " data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign-up</button>
                 </div>
-
             </div>
 
         </div>
     </nav>
+    <!--------  ----------------------------------->
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login to TMT Classes </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup for TMT Classes </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputname" class="form-label">Name</label>
+                            <input type="" class="form-control" id="exampleInputname"
+                                aria-describedby="namehelp">
+                            <div id="namehelp" class="form-text">We'll never share your name with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputconfirmPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputconfirmPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------->
+
+    <!---------------------------------------------------------------------->
+
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -163,9 +260,11 @@
                     <p>
                     <h6> For C language, Python, and Web Development Tools</h6>
                     </p>
-                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button class="btn btn-outline-primary">C
+                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button
+                            class="btn btn-outline-primary">C
                             Language</button></a>
-                    <a href="https://www.python.org/doc/" target="_blank"> <button class="btn btn-outline-secondary">Python</button></a>
+                    <a href="https://www.python.org/doc/" target="_blank"> <button
+                            class="btn btn-outline-secondary">Python</button></a>
                     <a href="https://getbootstrap.com/" target="_blank"> <button
                             class="btn btn-outline-danger">Bootstrap</button></a>
                     <a href="https://angular.io/docs" target="_blank"> <button type="button"
@@ -181,8 +280,8 @@
                     <a href="https://www.javascript.com/learn/strings" target="_blank"> <button type="button"
                             class="btn btn-outline-success">
                             JavaScript</button></a>
-                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank"> <button type="button"
-                            class="btn btn-outline-info">ASPnet</button></a>
+                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">
+                        <button type="button" class="btn btn-outline-info">ASPnet</button></a>
                     <a href="https://api.jquery.com/" target="_blank"> <button type="button"
                             class="btn btn-outline-dark">jQuery</button></a>
 
@@ -223,9 +322,9 @@
                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                         target="_blank">
                         <button class="btn btn-outline-warning">Email us</button></a>
-                    <a href="write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
+                    <a href="../write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
                             us</button></a>
-                    <a href="contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
+                    <a href="../contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
                             No</button></a>
                 </div>
             </div>
@@ -242,36 +341,61 @@
         </button>
     </div>
 
-  <div class="container my-4 ">
-      <table >
-    <article id="post-66498" class="post-66498 page type-page status-publish hentry">
-        
-        <h2>RD Sharma Solutions for Class 12 Maths (Chapter-wise)</h2>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-1-relations/">Chapter 1 – Relations</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-2-functions/">Chapter 2 – Functions</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-3-binary-operations/">Chapter 3 – Binary Operations</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-4-inverse-trigonometric-functions/">Chapter 4 – Inverse Trigonometric Functions</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-5-algebra-of-matrices/">Chapter 5 – Algebra of Matrices</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-6-determinants/">Chapter 6 – Determinants</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-7-adjoint-and-inverse-of-a-matrix/">Chapter 7 – Adjoint and Inverse of a Matrix</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-8-solution-of-simultaneous-linear-equations/">Chapter 8 – Solutions of Simultaneous Linear Equations</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-9-continuity/">Chapter 9 – Continuity </a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-10-differentiability/">Chapter 10 – Differentiability</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-11-differentiation/">Chapter 11 – Differentiation</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-12-higher-order-derivatives/">Chapter 12 – Higher Order Derivatives</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-13-derivative-as-a-rate-measurer/">Chapter 13 – Derivative as a Rate Measurer</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-14-differentials-errors-and-approximations/">Chapter 14 – Differentials, Errors and Approximations</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-15-mean-value-theorems/">Chapter 15 – Mean Value Theorems</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-16-tangents-and-normals/">Chapter 16 – Tangents and Normals</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-17-increasing-and-decreasing-functions/">Chapter 17 – Increasing and Decreasing Functions</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-18-maxima-and-minima/">Chapter 18 – Maxima and Minima</a></p>
-        <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-19-indefinite-integrals/">Chapter 19 – Indefinite Integrals</a></p>
-        
-        <div class="clearfix"></div>
-        </article>
-    </table>
-  </div>
-    
+    <div class="container my-4 ">
+        <table>
+            <article id="post-66498" class="post-66498 page type-page status-publish hentry">
+
+                <h2>RD Sharma Solutions for Class 12 Maths (Chapter-wise)</h2>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-1-relations/">Chapter 1 –
+                        Relations</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-2-functions/">Chapter 2 –
+                        Functions</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-3-binary-operations/">Chapter 3
+                        – Binary Operations</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-4-inverse-trigonometric-functions/">Chapter
+                        4 – Inverse Trigonometric Functions</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-5-algebra-of-matrices/">Chapter
+                        5 – Algebra of Matrices</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-6-determinants/">Chapter 6 –
+                        Determinants</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-7-adjoint-and-inverse-of-a-matrix/">Chapter
+                        7 – Adjoint and Inverse of a Matrix</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-8-solution-of-simultaneous-linear-equations/">Chapter
+                        8 – Solutions of Simultaneous Linear Equations</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-9-continuity/">Chapter 9 –
+                        Continuity </a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-10-differentiability/">Chapter
+                        10 – Differentiability</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-11-differentiation/">Chapter 11
+                        – Differentiation</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-12-higher-order-derivatives/">Chapter
+                        12 – Higher Order Derivatives</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-13-derivative-as-a-rate-measurer/">Chapter
+                        13 – Derivative as a Rate Measurer</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-14-differentials-errors-and-approximations/">Chapter
+                        14 – Differentials, Errors and Approximations</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-15-mean-value-theorems/">Chapter
+                        15 – Mean Value Theorems</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-16-tangents-and-normals/">Chapter
+                        16 – Tangents and Normals</a></p>
+                <p><a
+                        href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-17-increasing-and-decreasing-functions/">Chapter
+                        17 – Increasing and Decreasing Functions</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-18-maxima-and-minima/">Chapter
+                        18 – Maxima and Minima</a></p>
+                <p><a href="https://byjus.com/rd-sharma-solutions/class-12-maths-chapter-19-indefinite-integrals/">Chapter
+                        19 – Indefinite Integrals</a></p>
+
+                <div class="clearfix"></div>
+            </article>
+        </table>
+    </div>
+
 
 
 
@@ -362,8 +486,8 @@
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
                 </svg>
             </a>
-             <!-- hitwebcounter Code START -->
-             <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
                 <img src="https://hitwebcounter.com/counter/counter.php?page=7825086&style=0038&nbdigits=7&type=page&initCount=1000"
                     title="Free Counter" Alt="web counter" /></a>
         </div>

@@ -35,8 +35,10 @@
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
-                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm">C Language</a></li>
-                            <li><a class="dropdown-item" href="https://www.python.org/doc/">Python </a></li>
+                            <li><a class="dropdown-item" href="https://www.tutorialspoint.com/cprogramming/index.htm"
+                                    target="_blank">C Language</a></li>
+                            <li><a class="dropdown-item" href="https://www.python.org/doc/" target="_blank">Python </a>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider dropdown-menu-left">
                             </li>
@@ -50,9 +52,13 @@
                                     target="_blank">CSS</a></li>
                             <li><a class="dropdown-item" href="https://www.w3schools.com/php/DEFAULT.asp"
                                     target="_blank">PHP</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
-                            <li><a class="dropdown-item" href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">ASPnet</a></li>
-                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp" target="_blank">jQuery</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/"
+                                    target="_blank">JavaScript</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro"
+                                    target="_blank">ASPnet</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/jquery/default.asp"
+                                    target="_blank">jQuery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -107,8 +113,8 @@
                                     href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                                     target="_blank">Email
                                     me </a></li>
-                            <li><a class="dropdown-item" href="contact.html">Mobile No </a></li>
-                            <li><a class="dropdown-item" href="write.html">Write For us </a></li>
+                            <li><a class="dropdown-item" href="../contact.html">Mobile No </a></li>
+                            <li><a class="dropdown-item" href="../write.html">Write For us </a></li>
                         </ul>
                     </li>
                     <!--  <li class="nav-item">
@@ -119,15 +125,109 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success me-2" type="submit">Search</button>
                 </div>
+                <!---                login and signup---->
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-danger">Sign-up</button>
+                    <button type="button" class="btn btn-outline-light me-2 " data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign-up</button>
                 </div>
 
             </div>
 
         </div>
     </nav>
+    <!--------  ----------------------------------->
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Login to TMT Classes </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Signup for TMT Classes </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">Name</label>
+                        <input type="" class="form-control" id="exampleInputname"
+                            aria-describedby="namehelp">
+                        <div id="namehelp" class="form-text">We'll never share your name with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputconfirmPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputconfirmPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------------->
+
+
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -163,9 +263,11 @@
                     <p>
                     <h6> For C language, Python, and Web Development Tools</h6>
                     </p>
-                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button class="btn btn-outline-primary">C
+                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm" target="_blank"> <button
+                            class="btn btn-outline-primary">C
                             Language</button></a>
-                    <a href="https://www.python.org/doc/" target="_blank"> <button class="btn btn-outline-secondary">Python</button></a>
+                    <a href="https://www.python.org/doc/" target="_blank"> <button
+                            class="btn btn-outline-secondary">Python</button></a>
                     <a href="https://getbootstrap.com/" target="_blank"> <button
                             class="btn btn-outline-danger">Bootstrap</button></a>
                     <a href="https://angular.io/docs" target="_blank"> <button type="button"
@@ -181,8 +283,8 @@
                     <a href="https://www.javascript.com/learn/strings" target="_blank"> <button type="button"
                             class="btn btn-outline-success">
                             JavaScript</button></a>
-                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank"> <button type="button"
-                            class="btn btn-outline-info">ASPnet</button></a>
+                    <a href="https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro" target="_blank">
+                        <button type="button" class="btn btn-outline-info">ASPnet</button></a>
                     <a href="https://api.jquery.com/" target="_blank"> <button type="button"
                             class="btn btn-outline-dark">jQuery</button></a>
 
@@ -223,9 +325,9 @@
                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbpnSDVMsWMMkLLwBzlSJrRwDFMZgjgnqjbVHGgsNsktRrjkTvgFthCsLRmNdxFwJRxq"
                         target="_blank">
                         <button class="btn btn-outline-warning">Email us</button></a>
-                    <a href="write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
+                    <a href="../write.html" target="_blank"> <button class="btn btn-outline-danger">Write For
                             us</button></a>
-                    <a href="contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
+                    <a href="../contact.html" target="_blank"> <button type="button" class="btn btn-outline-info">Mobile
                             No</button></a>
                 </div>
             </div>
@@ -242,87 +344,120 @@
         </button>
     </div>
 
-  <div class="container my-4">
-      <div class="table-responsive"><table class="table table-bordered border-4 border-danger">
-<tbody>
-<tr>
-<td style="background-color: #491569; color: white;" colspan="3" align="center"><b>Download NCERT Exemplar For Class 8 Science Solutions</b></td>
-</tr>
-<tr>
-<td><strong>Chapter Name</strong></td>
+    <div class="container my-4">
+        <div class="table-responsive">
+            <table class="table table-bordered border-4 border-danger">
+                <tbody>
+                    <tr>
+                        <td style="background-color: #491569; color: white;" colspan="3" align="center"><b>Download
+                                NCERT Exemplar For Class 8 Science Solutions</b></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chapter Name</strong></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-1-crop-production-and-management/">Chapter 1 Crop Production and Management</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-1-crop-production-and-management/">Chapter
+                                1 Crop Production and Management</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-2-microorganisms-friend-and-foe/">Chapter 2 Microorganisms: Friend and Foe</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-2-microorganisms-friend-and-foe/">Chapter
+                                2 Microorganisms: Friend and Foe</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-3-synthetic-fibres-and-plastics/">Chapter 3 Synthetic Fibres and Plastics</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-3-synthetic-fibres-and-plastics/">Chapter
+                                3 Synthetic Fibres and Plastics</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-4-materials-metals-and-non-metals/">Chapter 4 Materials: Metals and Non-Metals</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-4-materials-metals-and-non-metals/">Chapter
+                                4 Materials: Metals and Non-Metals</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-5-coal-and-petroleum/">Chapter 5 Coal and Petroleum</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-5-coal-and-petroleum/">Chapter
+                                5 Coal and Petroleum</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-6-combustion-and-flame/">Chapter 6 Combustion and Flame</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-6-combustion-and-flame/">Chapter
+                                6 Combustion and Flame</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-7-conservation-of-plants-and-animals/">Chapter 7 Conservativation of Plants and Animals</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-7-conservation-of-plants-and-animals/">Chapter
+                                7 Conservativation of Plants and Animals</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-8-cell-structure-and-functions/">Chapter 8 Cell – Structure and Functions</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-8-cell-structure-and-functions/">Chapter
+                                8 Cell – Structure and Functions</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-9-reproduction-in-animals/">Chapter 9 Reproduction in Animals</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-9-reproduction-in-animals/">Chapter
+                                9 Reproduction in Animals</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-10-reaching-the-age-of-adolescence/">Chapter 10 Reaching the Age of Adolescence</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-10-reaching-the-age-of-adolescence/">Chapter
+                                10 Reaching the Age of Adolescence</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-11-force-and-pressure/">Chapter 11 Force and Pressure</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-11-force-and-pressure/">Chapter
+                                11 Force and Pressure</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-12-friction/">Chapter 12 Friction</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-12-friction/">Chapter 12
+                                Friction</a></td>
 
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-13-sound/">Chapter 13 Sound</a></td>
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-14-chemicals-effects-of-electric-current/">Chapter 14 Chemicals Effects of Electric Current</a></td>
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-15-some-natural-phenomena/">Chapter 15 Some Natural Phenomena</a></td>
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-16-light/">Chapter 16 Light</a></td>
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-17-stars-and-the-solar-system/">Chapter 17 Stars and the Solar System</a></td>
-</tr>
-<tr>
-<td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-18-pollution-of-air-and-water/">Chapter 18 Pollution of Air and Water</a></td>
-</tr>
-</tbody>
-</table></div>
-  </div>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-13-sound/">Chapter 13
+                                Sound</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-14-chemicals-effects-of-electric-current/">Chapter
+                                14 Chemicals Effects of Electric Current</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-15-some-natural-phenomena/">Chapter
+                                15 Some Natural Phenomena</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://byjus.com/ncert-exemplar-class-8-science-chapter-16-light/">Chapter 16
+                                Light</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-17-stars-and-the-solar-system/">Chapter
+                                17 Stars and the Solar System</a></td>
+                    </tr>
+                    <tr>
+                        <td><a
+                                href="https://byjus.com/ncert-exemplar-class-8-science-chapter-18-pollution-of-air-and-water/">Chapter
+                                18 Pollution of Air and Water</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    
+
 
 
 
@@ -413,8 +548,8 @@
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
                 </svg>
             </a>
-             <!-- hitwebcounter Code START -->
-             <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank" class="float-start bg-dark">
                 <img src="https://hitwebcounter.com/counter/counter.php?page=7825086&style=0038&nbdigits=7&type=page&initCount=1000"
                     title="Free Counter" Alt="web counter" /></a>
         </div>
